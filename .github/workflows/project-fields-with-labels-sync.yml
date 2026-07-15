@@ -1,25 +1,19 @@
-# TODO: automaticali add remove labels on issue add|edit and cutom fields change
 name: Sync Project Fields to Issue Labels
-
 on:
   issues:
     types:
       - opened
       - edited
-
 permissions:
   issues: write
   repository-projects: read
-
 jobs:
   sync-labels:
     runs-on: ubuntu-latest
-
     steps:
       - name: Sync labels from project fields
         uses: actions/github-script@v7
         with:
           script: |
             const issue = context.payload.issue;
-
             console.log(issue);
