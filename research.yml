@@ -1,0 +1,30 @@
+name: 🔍 Research Task
+description: Investigate technologies, tools, or approaches.
+title: "[Research]: "
+
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+    validations:
+      required: true
+
+  - type: textarea
+    id: research
+    attributes:
+      label: Research Questions
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected Outcome
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References

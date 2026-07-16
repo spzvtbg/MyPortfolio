@@ -1,0 +1,35 @@
+name: 🏗️ Infrastructure Task
+description: Repository, tooling, automation, or project configuration.
+title: "[Infrastructure]: "
+
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What is the goal of this task?
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the work to be completed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes

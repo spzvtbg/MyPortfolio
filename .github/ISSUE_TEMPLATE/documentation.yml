@@ -1,0 +1,33 @@
+name: 📝 Documentation Task
+description: Create or improve project documentation.
+title: "[Documentation]: "
+
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: |
+        - [ ] Documentation completed
+        - [ ] Reviewed
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
